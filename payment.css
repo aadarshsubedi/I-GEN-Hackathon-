@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    color: #5c6bc0;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+.image_container {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444;
+    font-size: 14px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus, button:focus {
+    border-color: #5c6bc0;
+    outline: none;
+}
+
+input, select {
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4e5ba2;
+}
+
+.payment-details {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.payment-details input[type="file"] {
+    padding: 8px;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.payment-details input[type="file"]:hover {
+    background-color: #f1f1f1;
+}
+
+section input[type="text"] {
+    text-transform: uppercase;
+}
+
+select, input {
+    font-family: 'Arial', sans-serif;
+}
+
+select option {
+    padding: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .div img {
+        width: 60px;
+        height: 60px;
+    }
+}

@@ -12,6 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Method</title>
     <style>
+        .image-container img {
+            width: 300px; /* Adjust the size of the image */
+            height: auto;
+        }
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
@@ -70,7 +74,10 @@
 </head>
 <body>
     <h1>Payment Method</h1>
-    <form action="process_payment.php" method="POST">
+    <div>
+    <img src="frame.png" class="image_container" style="width: 60px; height: 60px;align-content: end; margin-right: 5px;" >
+        </div>
+        <form action="process_payment.php" method="POST">
         <div class="section">
         <label for="paymentMethod">Select Payment Method</label>
          <select id="paymentMethod" name="paymentMethod" onchange="togglePaymentDetails()" required>
@@ -129,13 +136,8 @@
                 <input type="file" id="fileupload" name="fileupload"  >
             </div>
         </div>
-        <div>
-        <button  style="padding: 5px 5px; border: none; border-radius: 3px;width: 40px; background-color:rgb(198, 215, 233); color: white; cursor: pointer; display: flex; align-items: center;">
-    <img src="scan.png" alt="Button Icon" style="width: 30px; height: 30px; margin-right: 5px;" >
-</button>
-        </div>
-
         <button type="submit">Submit Payment</button>
     </form>
+    
 </body>
 </html>
